@@ -1,0 +1,228 @@
+div {
+    //border: solid orange 1px;
+}
+body {
+    margin: 0px;
+    background: #01a1ce;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1em 0;
+    padding: 1em 1em;
+    background: transparent;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow:
+            -1px 0 0 1px rgba(255, 203, 82, 0.75),
+            -1px -1px 0 1px rgba(255, 170, 70, 0.25),
+            -1px 1px 0 1px rgba(255, 170, 70, 0.25),
+            0 -1px 0 1px rgba(255, 136, 57, 0.5),
+            0 1px 0 1px rgba(255, 136, 57, 0.5),
+            1px -1px 0 1px rgba(255, 103, 44, 0.25),
+            1px 1px 0 1px rgba(255, 103, 44, 0.25),
+            1px 0 0 1px rgba(255, 69, 31, 0.75);
+}
+
+.btn:hover{
+    background: -webkit-linear-gradient(left, #ffe8a1, #ffc107);
+}
+
+.orange span {
+    background: -webkit-linear-gradient(left, #ffcb52, #ff451f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu {
+    position:relative;
+    height: 120px;
+}
+
+.menu a img {
+    height: 100%;
+    position:relative;
+    top: 10%;
+    left: 5%;
+}
+
+.menu p{
+    height: 70%;
+    position:absolute;
+    top: 50%;
+    left: 15%;
+    font-family: 'Poller One', cursive;
+    color: orange;
+    font-size: 16px;
+}
+
+@media (max-width:1024px) {
+    .menu p{
+        font-size: 10px;
+        left: 20%;
+    }
+}
+
+#access {
+    display: inline;
+    float: right;
+    top: 10px;
+}
+
+#access a {
+    display: block;
+    padding: 0 1.6em;
+    text-decoration: none;
+    line-height: 3;
+    -webkit-transition: .3s color ease-out;
+    transition: .3s color ease-out;
+}
+
+#access a > span {
+    display: block;
+    text-transform: uppercase;
+}
+
+#access > div > ul > li > a > span {
+    position: relative;
+    display: inline-block;
+    line-height: 2.5em;
+}
+
+#access > div > ul > li > a > span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    margin: auto;
+    opacity: 0;
+    -webkit-transition: .35s ease-out all;
+    transition: .35s ease-out all;
+}
+
+#access > div > ul > li:hover > a > span::before {
+    opacity: 1;
+    height: 3px;
+}
+
+#access ul li {
+    display: block;
+    float: left;
+    position: relative;
+    white-space: nowrap;
+}
+
+#ICO, .all {
+    height: 600px;
+}
+
+.all::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    padding-top: 600px;
+    z-index: -1;
+    background-image: url(../media/background_slow.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.92;
+}
+
+#ICO h2 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+#About {
+    height: 800px;
+    //background: #01a1ce;
+    background: linear-gradient(to top, #056cf6, #044fb4);
+}
+.row {
+    margin: 0 auto;
+    max-width: 600px;
+    color: black !important;
+    text-align: center!important;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+h2 {
+    font-weight: lighter;
+}
+
+#RoadMap {
+    //background: #01a1ce;
+    background: linear-gradient(to top, #01a1ce, #056cf6);
+}
+#Contact {
+    height: 40%;
+}
+#Contact img{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+#footer {
+    background: #01a1ce;
+    height: 10%;
+    vertical-align: middle;
+    text-align: center;
+}
+#footer div {
+    float: left;
+    background: #01a1ce;
+    margin-top: 2%;
+    height: 100%;
+    text-align: center;
+}
+#footer img{
+    width: 15%;
+    margin-left: -50%
+}
+#footer div span{
+    font-size: 14px;
+    font-family: Lucida Sans Unicode;
+}
+#footer div:nth-child(1) span{
+    font-size: 14px;
+    font-family: Lucida Sans Unicode;
+    position: absolute;
+    transform: translate(5%, 100%);
+}
+#footer div:nth-child(2) span:hover{
+    color: white;
+}
+#footer div a{
+    margin: 10px;
+    font-size: 18px;
+}
+#footer a:hover{
+    color: white;
+}
+@media screen and (max-width: 800px) {
+    #Contact {
+        height: 70%;
+    }
+    #footer {
+        height: 15%;
+    }
+}

@@ -1,0 +1,266 @@
+.trans {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out
+}
+
+.hidden {
+    display: none
+}
+
+.clearfix {
+    clear: both
+}
+
+.m-login--success .m-login__signin, .m-login--success .m-login__account {
+    display: none !important
+}
+
+.bigContainer {
+    width: 750px
+}
+
+.m-login.m-login--2 .m-login__wrapper .bigContainer {
+    width: 100%
+}
+
+.socialButtons {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left
+}
+
+.socialButtons h2 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 5px
+}
+
+.socialButtons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.socialButtons ul li {
+    display: inline-block;
+    margin: 5px 25px 5px 5px
+}
+
+.socialButtons ul li i {
+    display: inline-block;
+    width: 40px;
+    height: 40px
+}
+
+.socialButtons ul li .icon-medium {
+    background: url(/images/social/medium.svg)
+}
+
+.socialButtons ul li .icon-facebook {
+    background: url(/images/social/facebook-square.svg)
+}
+
+.socialButtons ul li .icon-twitter {
+    background: url(/images/social/twitter.svg)
+}
+
+.socialButtons ul li .icon-youtube {
+    background: url(/images/social/youtube.svg)
+}
+
+.socialButtons ul li .icon-telegram {
+    background: url(/images/social/telegram.svg)
+}
+
+.socialButtons ul li .icon-github {
+    background: url(/images/social/github.svg)
+}
+
+.socialButtons ul li .icon-linkedin2 {
+    background: url(/images/social/linkedin-square.svg)
+}
+
+.socialButtons ul li .icon-reddit {
+    background: url(/images/social/reddit-alien.svg)
+}
+
+.socialButtons ul li .icon-slack {
+    background: url(/images/social/slack.svg)
+}
+
+.socialButtons ul li .icon-steemit {
+    background: url(/images/social/steemit.svg)
+}
+
+.pagination {
+    display: inline-block
+}
+
+.pagination li {
+    display: inline-block;
+    margin-right: 5px;
+    color: #716aca;
+    text-decoration: none;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 400;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding-top: 8px
+}
+
+.pagination li:hover {
+    background: #edecf8
+}
+
+.pagination li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    color: #716aca;
+    text-decoration: none
+}
+
+.pagination .active {
+    background: #716aca;
+    color: #fff
+}
+
+.twoFaBox {
+    padding: 0 0 0 20px;
+    margin-top: 15px
+}
+
+.tdInfo {
+    display: none
+}
+
+@media (max-width: 1024px) {
+    .tdInfo {
+        display: inline-block;
+        font-weight: 700
+    }
+
+    .twoFaBox {
+        margin-top: 0
+    }
+
+    .table-bordered, .table {
+        display: block;
+        height: auto;
+        overflow-x: auto
+    }
+
+    .table-bordered tbody, .table tbody {
+        width: 100%;
+        display: block
+    }
+
+    .table-bordered tr, .table tr {
+        width: 100%;
+        display: block
+    }
+
+    .table-bordered th, .table th {
+        display: none
+    }
+
+    .table-bordered td, .table td {
+        width: 100%;
+        display: block
+    }
+}
+
+.table-nowrap {
+    table-layout: inherit !important
+}
+
+.table-nowrap td {
+    overflow-wrap: normal;
+    word-wrap: normal !important
+}
+
+.nav-tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    padding-bottom: 10px
+}
+
+.nav-tabs > li {
+    float: none
+}
+
+.nav-tabs::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    background-color: #f5f5f5
+}
+
+.nav-tabs::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+    height: 8px
+}
+
+.nav-tabs::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+    background-color: #ffb822
+}
+
+@media (max-width: 1670px) {
+    .buyTokensTable {
+        display: block;
+        height: auto;
+        overflow-x: auto
+    }
+
+    .buyTokensTable .tdInfo {
+        display: inline-block;
+        font-weight: 700
+    }
+
+    .buyTokensTable tbody {
+        width: 100%;
+        display: block
+    }
+
+    .buyTokensTable tr {
+        width: 100%;
+        display: block
+    }
+
+    .buyTokensTable th {
+        display: none
+    }
+
+    .buyTokensTable td {
+        width: 100%;
+        display: block
+    }
+}
+
+.tgLogo {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #666
+}
+
+.tgLogo img {
+    vertical-align: middle
+}

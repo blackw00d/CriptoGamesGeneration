@@ -1,0 +1,148 @@
+.block p {
+    font-size: 14px;
+    color: #646464;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.timeline-split .timeline {
+    overflow: hidden
+}
+
+.timeline-split {
+    position: relative;
+    width: 100%
+}
+
+.timeline-split .timeline {
+    position: relative;
+    padding: 50px;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+}
+
+.timeline-split .timeline::after,
+.timeline-split .timeline::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background: orange;//#fecb06;
+}
+
+.timeline-split .timeline h3 {
+    font-size: 22px;
+    font-family: Poppins, sans-serif;
+    color: #1e50be;
+}
+
+.timeline-split .timeline span {
+    color: #4d4d4d;
+    display: block;
+    margin-bottom: 10px
+}
+
+.timeline-split .timeline::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0;
+    left: calc(50% - 10px)
+}
+
+.timeline-split .timeline::after {
+    width: 2px;
+    height: 100%;
+    top: 10px;
+    left: 50%;
+    left: calc(50% - 1px)
+}
+
+.timeline-split .timeline .block {
+    width: 50%;
+    width: calc(50% - 30px);
+    text-align: left;
+    position: relative
+}
+
+.timeline-split .timeline .block::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background: orange;//#fecb06;
+    top: 10px
+}
+
+.timeline-split .timeline .block.block-left {
+    text-align: right;
+}
+
+.timeline-split .timeline .block.block-left::before {
+    right: -35px;
+}
+
+.timeline-split .timeline .block.block-right {
+    text-align: left;
+    margin-left: 50%;
+    margin-left: calc(50% + 30px)
+}
+
+.timeline-split .timeline .block.block-right::before {
+    left: -35px
+}
+
+@media (max-width:768px) {
+    .timeline-split .timeline {
+        padding: 50px 20px
+    }
+    .timeline-split .timeline h3 {
+        font-size: 19px
+    }
+}
+
+@media (max-width:767px) {
+    .timeline-split .timeline::after {
+        left: 9px
+    }
+    .timeline-split .timeline::before {
+        left: 0
+    }
+    .timeline-split .timeline .circle {
+        left: 2px
+    }
+    .timeline-split .timeline .block.block-right::before,
+    .timeline-split .timeline .block::before {
+        left: -15px
+    }
+    .timeline-split .timeline .block {
+        width: 100%!important;
+        text-align: left;
+        padding-left: 20px
+    }
+    .timeline-split .timeline .block.block-left {
+        text-align: left
+    }
+    .timeline-split .timeline .block.block-right {
+        margin-left: 0
+    }
+    .mt-30 {
+        margin-top: 30px
+    }
+}
+
+.title-box {
+    margin-bottom: 20px;
+}
+
+.title-box .title-center {
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 20px
+}
+
+.title-box .title-center {
+    text-align: center;
+}
