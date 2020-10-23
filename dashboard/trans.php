@@ -1,6 +1,6 @@
 <?php
 
-require_once 'settings.php';
+require_once '../settings.php';
 
 /*
  * Обновление адреса пользователю для выплаты токенов по окончанию ICO

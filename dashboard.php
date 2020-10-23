@@ -68,7 +68,7 @@ $token_data = get_crypto_data();
                 if (!(/^(0x){1}[0-9a-fA-F]{40}$/i.test(address))) {
                     $('#errortext').html("Wrond Address");
                 } else {
-                    $.post("trans.php", {
+                    $.post("dashboard/trans.php", {
                         user: '<?php echo $user_data['user_name'];?>',
                         address: $("#addressinput").val()
                     })
@@ -114,7 +114,7 @@ $token_data = get_crypto_data();
                     var currency = cur.options[cur.selectedIndex].value;
                     var currencyPrice = parseFloat(document.getElementById('currencyPrice').value.replace(",", "."));
                     var currencyTotal = parseFloat(document.getElementById('currencyTotal').value.replace(",", "."));
-                    $.post("trans.php", {
+                    $.post("dashboard/trans.php", {
                         user: '<?php echo $user_data['user_name'];?>',
                         amountToken: amount,
                         currency: currency,
@@ -533,8 +533,7 @@ $token_data = get_crypto_data();
                             <div class="table-responsive">
                                 <table class="table table-hover table-borderless no-wrap m-b-0" style="width: 50%">
                                     <tbody>
-                                    <form action="trans.php" id="addressForm" method="post"
-                                    ">
+                                    <form id="addressForm" method="post">
                                     <tr>
                                         <td>
                                             <h6 class="dashcard-text-title text-muted">
@@ -573,8 +572,7 @@ $token_data = get_crypto_data();
                             <div class="table-responsive">
                                 <table class="table table-hover table-borderless no-wrap m-b-0" style="width: 50%">
                                     <tbody>
-                                    <form action="trans.php" id="CalculatorForm" method="post"
-                                    ">
+                                    <form id="CalculatorForm" method="post">
                                     <tr>
                                         <td>
                                             <h6 class="dashcard-text-title text-muted">
